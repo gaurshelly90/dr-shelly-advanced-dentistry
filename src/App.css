@@ -659,21 +659,21 @@ body {
 
 /* Option 2: Modern Sans-Serif (Clean & Professional) */
 .logo h1 {
-  color: #1e293b;
+  color: #2563eb;
   font-size: 30px;
   font-weight: 800;
   margin: 0;
   line-height: 1.2;
   font-family: 'Inter', 'Segoe UI', 'Roboto', -apple-system, sans-serif;
   letter-spacing: -0.3px;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  text-shadow: 0 1px 3px rgba(37, 99, 235, 0.08);
   transition: all 0.3s ease;
 }
 
 .logo h1:hover {
-  color: #2563eb;
+  color: #1d4ed8;
   transform: translateY(-1px);
-  text-shadow: 0 2px 8px rgba(37, 99, 235, 0.15);
+  text-shadow: 0 2px 8px rgba(37, 99, 235, 0.2);
 }
 
 .nav {
