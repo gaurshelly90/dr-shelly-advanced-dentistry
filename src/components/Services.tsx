@@ -41,12 +41,7 @@ const Services: React.FC = () => {
     }
   ];
 
-  const scrollToContact = () => {
-    const element = document.getElementById('contact');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+
 
   return (
     <section id="services" className="services">

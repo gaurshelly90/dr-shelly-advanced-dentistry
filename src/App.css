@@ -533,7 +533,7 @@ body {
 
 /* Testimonials Section */
 .testimonials {
-  padding: 80px 0;
+  padding: 40px 0 80px 0;
   background: #f8fafc;
 }
 
@@ -1136,12 +1136,12 @@ body {
 
 .services-image {
   text-align: center;
-  margin: 60px 0;
+  margin: 50px 0 10px 0;
 }
 
 .services-image .image-placeholder {
-  height: 300px;
-  max-width: 800px;
+  height: 400px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -1151,8 +1151,6 @@ body {
   object-fit: cover;
   border-radius: 12px;
 }
-
-
 
 /* Contact Section */
 .contact {
@@ -1624,7 +1622,12 @@ body {
   }
   
   .testimonials {
-    padding: 60px 0;
+    padding: 30px 0 60px 0;
+  }
+  
+  .services-image .image-placeholder {
+    height: 250px;
+    max-width: 100%;
   }
   
   .rating-display {
