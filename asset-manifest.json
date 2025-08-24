@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/dr-shelly-advanced-dentistry/static/css/main.54c7ed46.css",
-    "main.js": "/dr-shelly-advanced-dentistry/static/js/main.1009b943.js",
-    "static/js/453.5111fdef.chunk.js": "/dr-shelly-advanced-dentistry/static/js/453.5111fdef.chunk.js",
-    "index.html": "/dr-shelly-advanced-dentistry/index.html",
-    "main.54c7ed46.css.map": "/dr-shelly-advanced-dentistry/static/css/main.54c7ed46.css.map",
-    "main.1009b943.js.map": "/dr-shelly-advanced-dentistry/static/js/main.1009b943.js.map",
-    "453.5111fdef.chunk.js.map": "/dr-shelly-advanced-dentistry/static/js/453.5111fdef.chunk.js.map"
+    "main.css": "/static/css/main.54c7ed46.css",
+    "main.js": "/static/js/main.1d32324f.js",
+    "static/js/453.5111fdef.chunk.js": "/static/js/453.5111fdef.chunk.js",
+    "index.html": "/index.html",
+    "main.54c7ed46.css.map": "/static/css/main.54c7ed46.css.map",
+    "main.1d32324f.js.map": "/static/js/main.1d32324f.js.map",
+    "453.5111fdef.chunk.js.map": "/static/js/453.5111fdef.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.54c7ed46.css",
-    "static/js/main.1009b943.js"
+    "static/js/main.1d32324f.js"
   ]
 }
