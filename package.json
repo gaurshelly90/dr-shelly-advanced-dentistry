@@ -2,7 +2,7 @@
   "name": "dr-shelly-dentistry",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://gaurshelly90.github.io/dr-shelly-dentistry",
+  "homepage": "https://gaurshelly90.github.io/dr-shelly-advanced-dentistry",
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.7.0",
