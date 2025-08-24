@@ -644,6 +644,19 @@ body {
   min-height: 70px;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo-image {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
 .logo h1 {
   color: #2563eb;
   font-size: 26px;
@@ -1283,6 +1296,14 @@ body {
   .header .container {
     padding: 15px 20px;
     min-height: 60px;
+  }
+  
+  .logo {
+    gap: 10px;
+  }
+  
+  .logo-image {
+    height: 40px;
   }
   
   .logo h1 {
