@@ -4,9 +4,9 @@ import { Phone, MessageCircle } from 'lucide-react';
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
     fullName: '',
-    phone: '082958 31559',
-    email: 'your.email@example.com',
-    service: 'Root Canal Treatment',
+    phone: '',
+    email: '',
+    service: '',
     message: ''
   });
 
@@ -39,9 +39,9 @@ const Contact: React.FC = () => {
     // Reset form after sending to WhatsApp
     setFormData({
       fullName: '',
-      phone: '082958 31559',
-      email: 'your.email@example.com',
-      service: 'Root Canal Treatment',
+      phone: '',
+      email: '',
+      service: '',
       message: ''
     });
   };
@@ -115,44 +115,48 @@ const Contact: React.FC = () => {
                 />
               </div>
 
-              <div className="form-group">
-                <label htmlFor="phone">Phone Number</label>
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  value={formData.phone}
-                  onChange={handleInputChange}
-                  required
-                />
-              </div>
+                                   <div className="form-group">
+                       <label htmlFor="phone">Phone Number</label>
+                       <input
+                         type="tel"
+                         id="phone"
+                         name="phone"
+                         value={formData.phone}
+                         onChange={handleInputChange}
+                         placeholder="Enter your phone number"
+                         required
+                       />
+                     </div>
 
-              <div className="form-group">
-                <label htmlFor="email">Email</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleInputChange}
-                  required
-                />
-              </div>
+                     <div className="form-group">
+                       <label htmlFor="email">Email</label>
+                       <input
+                         type="email"
+                         id="email"
+                         name="email"
+                         value={formData.email}
+                         onChange={handleInputChange}
+                         placeholder="Enter your email address"
+                         required
+                       />
+                     </div>
 
-              <div className="form-group">
-                <label htmlFor="service">Preferred Service</label>
-                <select
-                  id="service"
-                  name="service"
-                  value={formData.service}
-                  onChange={handleInputChange}
-                >
-                  <option value="Root Canal Treatment">Root Canal Treatment (RCT)</option>
-                  <option value="Dental Implants">Dental Implants</option>
-                  <option value="General Consultation">General Consultation</option>
-                  <option value="Emergency Care">Emergency Care</option>
-                </select>
-              </div>
+                     <div className="form-group">
+                       <label htmlFor="service">Preferred Service</label>
+                       <select
+                         id="service"
+                         name="service"
+                         value={formData.service}
+                         onChange={handleInputChange}
+                         required
+                       >
+                         <option value="">Select a service</option>
+                         <option value="Root Canal Treatment">Root Canal Treatment (RCT)</option>
+                         <option value="Dental Implants">Dental Implants</option>
+                         <option value="General Consultation">General Consultation</option>
+                         <option value="Emergency Care">Emergency Care</option>
+                       </select>
+                     </div>
 
               <div className="form-group">
                 <label htmlFor="message">Message (Optional)</label>
