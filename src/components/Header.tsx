@@ -31,7 +31,6 @@ const Header: React.FC = () => {
       <header className="header">
         <div className="container">
           <div className="logo">
-            <img src={`${process.env.PUBLIC_URL}/images/logo.jpg`} alt="Dr. Shelly's Advanced Dentistry Logo" className="logo-image" />
             <h1>Dr. Shelly's Advanced Dentistry</h1>
           </div>
           
