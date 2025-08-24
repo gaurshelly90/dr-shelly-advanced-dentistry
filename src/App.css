@@ -166,7 +166,7 @@ body {
   padding: 25px;
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-  border-top: 4px solid #10b981;
+  border-top: 4px solid #2563eb;
 }
 
 .contact-card h3 {
@@ -537,7 +537,7 @@ body {
   background: #f8fafc;
   padding: 40px;
   border-radius: 16px;
-  border-top: 4px solid #10b981;
+  border-top: 4px solid #2563eb;
 }
 
 .map-section-full h3 {
@@ -589,7 +589,7 @@ body {
   display: flex;
   align-items: center;
   gap: 8px;
-  background: #10b981;
+  background: #2563eb;
   color: white;
   border: none;
   padding: 12px 24px;
@@ -601,9 +601,9 @@ body {
 }
 
 .directions-btn:hover {
-  background: #059669;
+  background: #1d4ed8;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
 }
 
 .book-appointment-btn {
