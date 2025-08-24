@@ -657,23 +657,12 @@ body {
   border-radius: 8px;
 }
 
-/* Option 2: Modern Sans-Serif (Clean & Professional) */
 .logo h1 {
   color: #2563eb;
-  font-size: 30px;
-  font-weight: 800;
+  font-size: 26px;
+  font-weight: 700;
   margin: 0;
   line-height: 1.2;
-  font-family: 'Inter', 'Segoe UI', 'Roboto', -apple-system, sans-serif;
-  letter-spacing: -0.3px;
-  text-shadow: 0 1px 3px rgba(37, 99, 235, 0.08);
-  transition: all 0.3s ease;
-}
-
-.logo h1:hover {
-  color: #1d4ed8;
-  transform: translateY(-1px);
-  text-shadow: 0 2px 8px rgba(37, 99, 235, 0.2);
 }
 
 .nav {
@@ -1318,9 +1307,7 @@ body {
   }
   
   .logo h1 {
-    font-size: 24px;
-    letter-spacing: -0.2px;
-    font-weight: 700;
+    font-size: 22px;
   }
   
   .nav {
