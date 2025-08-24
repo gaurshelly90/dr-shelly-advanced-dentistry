@@ -41,7 +41,7 @@ const About: React.FC = () => {
           
           <div className="about-image">
             <div className="image-placeholder">
-              <img src="/images/dr-shelly-profile.jpg" alt="Dr. Shelly Sharma - MDS Endodontist in Rewari" />
+              <img src={`${process.env.PUBLIC_URL}/images/dr-shelly-profile.jpg`} alt="Dr. Shelly Sharma - MDS Endodontist in Rewari" />
             </div>
           </div>
         </div>

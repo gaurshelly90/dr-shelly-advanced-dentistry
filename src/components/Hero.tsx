@@ -33,7 +33,7 @@ const Hero: React.FC = () => {
           
           <div className="hero-image">
             <div className="image-placeholder">
-              <img src="/images/dental-clinic-hero.jpg" alt="Dr. Shelly's Advanced Dentistry Clinic in Rewari" />
+              <img src={`${process.env.PUBLIC_URL}/images/dental-clinic-hero.jpg`} alt="Dr. Shelly's Advanced Dentistry Clinic in Rewari" />
             </div>
           </div>
         </div>

@@ -75,7 +75,7 @@ const Services: React.FC = () => {
 
         <div className="services-image">
           <div className="image-placeholder">
-            <img src="/images/dental-equipment.jpg" alt="Advanced dental equipment at Dr. Shelly's clinic in Rewari" />
+            <img src={`${process.env.PUBLIC_URL}/images/dental-equipment.jpg`} alt="Advanced dental equipment at Dr. Shelly's clinic in Rewari" />
           </div>
         </div>
 
