@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Phone, MessageCircle } from 'lucide-react';
+import { Phone, MessageCircle, MapPin } from 'lucide-react';
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -59,7 +59,7 @@ const Contact: React.FC = () => {
         <div className="contact-content">
           <div className="booking-sidebar">
             <div className="contact-card">
-              <h3>📞 Contact Options</h3>
+              <h3>📞 Contact & Directions</h3>
               <div className="contact-methods">
                 <button className="contact-method" onClick={() => window.open('tel:082958 31559')}>
                   <Phone size={20} />
@@ -73,6 +73,13 @@ const Contact: React.FC = () => {
                   <div>
                     <strong>WhatsApp</strong>
                     <span>Quick response</span>
+                  </div>
+                </button>
+                <button className="contact-method" onClick={() => window.open('https://maps.google.com/maps?q=52,+TP+Scheme+Rd,+near+Suraj+Apartments,+Rewari,+Haryana+123401')}>
+                  <MapPin size={20} />
+                  <div>
+                    <strong>Get Directions</strong>
+                    <span>Navigate to clinic</span>
                   </div>
                 </button>
               </div>
