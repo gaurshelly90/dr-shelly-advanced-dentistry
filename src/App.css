@@ -657,52 +657,23 @@ body {
   border-radius: 8px;
 }
 
+/* Option 2: Modern Sans-Serif (Clean & Professional) */
 .logo h1 {
-  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 25%, #06b6d4 50%, #0891b2 75%, #1e40af 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  background-size: 200% 200%;
-  animation: gradientShift 4s ease-in-out infinite;
-  font-size: 28px;
-  font-weight: 800;
+  color: #1e293b;
+  font-size: 26px;
+  font-weight: 700;
   margin: 0;
-  line-height: 1.1;
-  font-family: 'Inter', 'Segoe UI', 'Roboto', sans-serif;
-  letter-spacing: -0.5px;
-  text-transform: uppercase;
-  position: relative;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.logo h1::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 25%, #06b6d4 50%, #0891b2 75%, #1e40af 100%);
-  background-size: 200% 200%;
-  animation: gradientShift 4s ease-in-out infinite;
-  filter: blur(8px);
-  opacity: 0.3;
-  z-index: -1;
-  border-radius: 8px;
+  line-height: 1.2;
+  font-family: 'Inter', 'Segoe UI', 'Roboto', -apple-system, sans-serif;
+  letter-spacing: -0.2px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
 }
 
 .logo h1:hover {
-  transform: translateY(-2px) scale(1.05);
-  filter: drop-shadow(0 8px 16px rgba(59, 130, 246, 0.4));
-}
-
-@keyframes gradientShift {
-  0%, 100% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
+  color: #2563eb;
+  transform: translateY(-1px);
+  text-shadow: 0 2px 8px rgba(37, 99, 235, 0.15);
 }
 
 .nav {
@@ -1347,14 +1318,9 @@ body {
   }
   
   .logo h1 {
-    font-size: 18px;
-    letter-spacing: -0.3px;
-    font-weight: 700;
-  }
-  
-  .logo h1::before {
-    filter: blur(4px);
-    opacity: 0.2;
+    font-size: 20px;
+    letter-spacing: -0.1px;
+    font-weight: 600;
   }
   
   .nav {
