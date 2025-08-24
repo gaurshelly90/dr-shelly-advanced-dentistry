@@ -59,7 +59,7 @@ const Contact: React.FC = () => {
         <div className="contact-content">
           <div className="booking-sidebar">
             <div className="contact-card">
-              <h3>📞 Contact & Directions</h3>
+              <h3>📞 Contact Options</h3>
               <div className="contact-methods">
                 <button className="contact-method" onClick={() => window.open('tel:082958 31559')}>
                   <Phone size={20} />
@@ -73,13 +73,6 @@ const Contact: React.FC = () => {
                   <div>
                     <strong>WhatsApp</strong>
                     <span>Quick response</span>
-                  </div>
-                </button>
-                <button className="contact-method" onClick={() => window.open('https://maps.google.com/maps?q=52,+TP+Scheme+Rd,+near+Suraj+Apartments,+Rewari,+Haryana+123401')}>
-                  <MapPin size={20} />
-                  <div>
-                    <strong>Get Directions</strong>
-                    <span>Navigate to clinic</span>
                   </div>
                 </button>
               </div>
@@ -103,7 +96,6 @@ const Contact: React.FC = () => {
               </ul>
             </div>
 
-
           </div>
 
           <div className="appointment-form">
@@ -122,48 +114,48 @@ const Contact: React.FC = () => {
                 />
               </div>
 
-                                   <div className="form-group">
-                       <label htmlFor="phone">Phone Number</label>
-                       <input
-                         type="tel"
-                         id="phone"
-                         name="phone"
-                         value={formData.phone}
-                         onChange={handleInputChange}
-                         placeholder="Enter your phone number"
-                         required
-                       />
-                     </div>
+              <div className="form-group">
+                <label htmlFor="phone">Phone Number</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleInputChange}
+                  placeholder="Enter your phone number"
+                  required
+                />
+              </div>
 
-                     <div className="form-group">
-                       <label htmlFor="email">Email</label>
-                       <input
-                         type="email"
-                         id="email"
-                         name="email"
-                         value={formData.email}
-                         onChange={handleInputChange}
-                         placeholder="Enter your email address"
-                         required
-                       />
-                     </div>
+              <div className="form-group">
+                <label htmlFor="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleInputChange}
+                  placeholder="Enter your email address"
+                  required
+                />
+              </div>
 
-                     <div className="form-group">
-                       <label htmlFor="service">Preferred Service</label>
-                       <select
-                         id="service"
-                         name="service"
-                         value={formData.service}
-                         onChange={handleInputChange}
-                         required
-                       >
-                         <option value="">Select a service</option>
-                         <option value="Root Canal Treatment">Root Canal Treatment (RCT)</option>
-                         <option value="Dental Implants">Dental Implants</option>
-                         <option value="General Consultation">General Consultation</option>
-                         <option value="Emergency Care">Emergency Care</option>
-                       </select>
-                     </div>
+              <div className="form-group">
+                <label htmlFor="service">Preferred Service</label>
+                <select
+                  id="service"
+                  name="service"
+                  value={formData.service}
+                  onChange={handleInputChange}
+                  required
+                >
+                  <option value="">Select a service</option>
+                  <option value="Root Canal Treatment">Root Canal Treatment (RCT)</option>
+                  <option value="Dental Implants">Dental Implants</option>
+                  <option value="General Consultation">General Consultation</option>
+                  <option value="Emergency Care">Emergency Care</option>
+                </select>
+              </div>
 
               <div className="form-group">
                 <label htmlFor="message">Message (Optional)</label>
@@ -183,6 +175,36 @@ const Contact: React.FC = () => {
               </button>
               <p className="form-note">Your details will be sent via WhatsApp for quick appointment confirmation.</p>
             </form>
+          </div>
+        </div>
+
+        {/* Full Width Map Section */}
+        <div className="map-section-full">
+          <h3>🗺️ Find Us Here</h3>
+          <div className="map-container-full">
+            <iframe
+              src={`https://maps.google.com/maps?q=28.20861846929935,76.61991499364076&t=&z=16&ie=UTF8&iwloc=&output=embed`}
+              width="100%"
+              height="350"
+              style={{border: 0, borderRadius: '12px'}}
+              allowFullScreen={true}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Dr. Shelly's Advanced Dentistry Location"
+            ></iframe>
+            <div className="map-address-full">
+              <div className="address-info">
+                <h4>📍 Dr. Shelly's Advanced Dentistry</h4>
+                <p>52, TP Scheme Rd, near Suraj Apartments, Rewari, Haryana 123401</p>
+              </div>
+              <button 
+                className="directions-btn"
+                onClick={() => window.open('https://www.google.com/maps/dir/?api=1&destination=28.20861846929935,76.61991499364076')}
+              >
+                <MapPin size={18} />
+                Get Directions
+              </button>
+            </div>
           </div>
         </div>
       </div>
