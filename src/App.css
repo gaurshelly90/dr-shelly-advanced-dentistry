@@ -1152,23 +1152,7 @@ body {
   border-radius: 12px;
 }
 
-.services-cta {
-  text-align: center;
-  margin-top: 60px;
-}
 
-.services-cta h3 {
-  font-size: 28px;
-  font-weight: 700;
-  color: #1e293b;
-  margin-bottom: 15px;
-}
-
-.services-cta p {
-  font-size: 18px;
-  color: #64748b;
-  margin-bottom: 30px;
-}
 
 /* Contact Section */
 .contact {

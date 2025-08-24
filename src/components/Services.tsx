@@ -79,11 +79,7 @@ const Services: React.FC = () => {
           </div>
         </div>
 
-        <div className="services-cta">
-          <h3>Ready to Get Started?</h3>
-          <p>Schedule your consultation today and experience the difference of specialized dental care.</p>
-          <button className="btn-primary" onClick={scrollToContact}>Book Your Appointment</button>
-        </div>
+
       </div>
     </section>
   );
