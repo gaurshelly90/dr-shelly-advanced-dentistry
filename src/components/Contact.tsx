@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Phone, MessageCircle, MapPin } from 'lucide-react';
+import { trackAppointmentSubmission, trackPhoneClick, trackWhatsAppClick, trackDirectionsClick } from '../utils/analytics';
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -20,6 +21,9 @@ const Contact: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    
+    // Track appointment submission in Google Analytics
+    trackAppointmentSubmission(formData);
     
     // Create WhatsApp message with form data
     const phoneNumber = "918295831559"; // Dr. Shelly's number with country code
@@ -61,14 +65,20 @@ const Contact: React.FC = () => {
             <div className="contact-card">
               <h3>📞 Contact Options</h3>
               <div className="contact-methods">
-                <button className="contact-method" onClick={() => window.open('tel:082958 31559')}>
+                <button className="contact-method" onClick={() => {
+                  trackPhoneClick();
+                  window.open('tel:082958 31559');
+                }}>
                   <Phone size={20} />
                   <div>
                     <strong>Call Now</strong>
                     <span>082958 31559</span>
                   </div>
                 </button>
-                <button className="contact-method" onClick={() => window.open('https://wa.me/918295831559?text=Hello Dr. Shelly! I need dental consultation.')}>
+                <button className="contact-method" onClick={() => {
+                  trackWhatsAppClick('contact_section');
+                  window.open('https://wa.me/918295831559?text=Hello Dr. Shelly! I need dental consultation.');
+                }}>
                   <MessageCircle size={20} />
                   <div>
                     <strong>WhatsApp</strong>
@@ -199,7 +209,10 @@ const Contact: React.FC = () => {
               </div>
               <button 
                 className="directions-btn"
-                onClick={() => window.open('https://www.google.com/maps/dir/?api=1&destination=28.20861846929935,76.61991499364076')}
+                onClick={() => {
+                  trackDirectionsClick();
+                  window.open('https://www.google.com/maps/dir/?api=1&destination=28.20861846929935,76.61991499364076');
+                }}
               >
                 <MapPin size={18} />
                 Get Directions
